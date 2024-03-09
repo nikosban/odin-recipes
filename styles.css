@@ -2,6 +2,10 @@
     font-family:monospace;
 }
 
+body {
+    background-color: #fff7ed;
+}
+
 h1 {
     font-size: 32px;
     line-height: 40px;
@@ -11,7 +15,17 @@ h1 {
 h2 {
     font-size: 24px;
     line-height: 32px;
+    
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
     color:#1e293b;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -29,4 +43,54 @@ li {
     font-size: 16px;
     line-height: 24px;
     color:#374151;
+}
+
+a.back-btn {
+    display: block;
+    padding: 12px 24px;
+    background-color: #fdba74;
+    width: fit-content;
+    border-radius: 12px;
+
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1e293b;
+}
+
+/* Homepage */
+.recipes {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 24px;
+}
+
+.rp-card {
+    display: block;
+    margin-top: 24px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #e7e5e4;
+    transition:transform 0.2s ease-in-out;
+}
+
+.thumb {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Interactions */
+.rp-card:hover {
+    background-color: #ffedd5;
+    border: 1px solid #9a3412;
+    box-shadow: 10px 10px 0px -1px rgba(41,37,36,1);
+    transform: translate(-5px, -5px);
+}
+
+a.back-btn:hover {
+    background-color: #fb923c;
 }
